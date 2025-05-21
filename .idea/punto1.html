@@ -1,10 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Versiones: Local vs Remoto</title>
+    <link rel="stylesheet" href="./css/punto1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+<header class="main-header">
+    <div class="container">
+        <h1><i class="fas fa-code-branch"></i> Control de Versiones</h1>
+        <p class="subtitle">Diferencias clave entre sistemas locales y remotos</p>
+    </div>
+</header>
 
+<main class="container">
+    <section class="intro-section">
+        <p>El control de versiones es esencial en el desarrollo de software. Existen dos enfoques principales: <strong>local</strong> y <strong>remoto</strong>. A continuación se presentan sus características, ventajas y desventajas.</p>
+    </section>
+
+    <div class="comparison-grid">
+        <article class="version-card local">
+            <header>
+                <i class="fas fa-laptop-code icon"></i>
+                <h2>Versionamiento Local</h2>
+            </header>
+            <div class="card-content">
+                <h3>Características</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Opera en una sola máquina</li>
+                    <li><i class="fas fa-check"></i> No requiere conexión a internet</li>
+                    <li><i class="fas fa-check"></i> Ejemplos: RCS, SCCS</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3><i class="fas fa-thumbs-up"></i> Ventajas</h3>
+                        <ul>
+                            <li>Simple de configurar y usar</li>
+                            <li>No depende de servidores externos</li>
+                            <li>Mayor privacidad</li>
+                        </ul>
+                    </div>
+
+                    <div class="cons">
+                        <h3><i class="fas fa-thumbs-down"></i> Desventajas</h3>
+                        <ul>
+                            <li>No permite colaboración</li>
+                            <li>Riesgo de pérdida de datos</li>
+                            <li>Historial limitado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="version-card remote">
+            <header>
+                <i class="fas fa-cloud icon"></i>
+                <h2>Versionamiento Remoto</h2>
+            </header>
+            <div class="card-content">
+                <h3>Características</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Repositorio centralizado</li>
+                    <li><i class="fas fa-check"></i> Requiere conexión a internet</li>
+                    <li><i class="fas fa-check"></i> Ejemplos: Git, SVN, Mercurial</li>
+                </ul>
+
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3><i class="fas fa-thumbs-up"></i> Ventajas</h3>
+                        <ul>
+                            <li>Facilita la colaboración</li>
+                            <li>Backup automático</li>
+                            <li>Historial completo accesible</li>
+                        </ul>
+                    </div>
+
+                    <div class="cons">
+                        <h3><i class="fas fa-thumbs-down"></i> Desventajas</h3>
+                        <ul>
+                            <li>Requiere configuración inicial</li>
+                            <li>Dependencia de internet</li>
+                            <li>Posibles problemas de permisos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <section class="workflow-section">
+        <h2><i class="fas fa-project-diagram"></i> Flujo de Trabajo</h2>
+
+        <div class="workflow-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Local</h3>
+                <p>El desarrollador trabaja en su máquina con commits locales</p>
+            </div>
+
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Stage</h3>
+                <p>Preparación de cambios para enviar al repositorio remoto</p>
+            </div>
+
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Remoto</h3>
+                <p>Push de los cambios al repositorio central para colaboración</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2><i class="fas fa-terminal"></i> Comandos Básicos</h2>
+        <div class="command-grid">
+            <div class="command-category local">
+                <h3>Local</h3>
+                <ul>
+                    <li><code>git init</code> - Inicializa repositorio</li>
+                    <li><code>git add</code> - Añade cambios al stage</li>
+                    <li><code>git commit</code> - Guarda cambios localmente</li>
+                </ul>
+            </div>
+
+            <div class="command-category remote">
+                <h3>Remoto</h3>
+                <ul>
+                    <li><code>git clone</code> - Copia repositorio remoto</li>
+                    <li><code>git push</code> - Envía cambios al remoto</li>
+                    <li><code>git pull</code> - Trae cambios del remoto</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>© 2023 Sistema de Control de Versiones | Diseño Profesional</p>
+        <p class="credits">Creado con <i class="fas fa-heart"></i> para desarrolladores</p>
+    </div>
+</footer>
+
+<script src="./js/punto1.js"></script>
 </body>
-</html>
+</html>>
